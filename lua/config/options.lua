@@ -1,6 +1,6 @@
 local options = {
-  -- relativenumber = true,
-  -- number = true,
+  relativenumber = true,
+  number = true,
   tabstop = 2, -- 2 spaces for a tab
   shiftwidth = 2, -- 2 spaces for indent width
   expandtab = true, -- use spaces instead tab
@@ -11,7 +11,7 @@ local options = {
   cursorline = true,
   -- cursorlineopt = "number",
   termguicolors = true,
- background = "light",
+  background = "light",
   signcolumn = "yes",
   backspace = "indent,eol,start",
   splitright = true,
@@ -30,4 +30,18 @@ local options = {
 
 for k, v in pairs(options) do
   vim.opt[k] = v
+end
+
+
+
+-- neovide relate
+vim.o.guifont = "MonoLisa Nasy:h10:i"
+if vim.g.neovide then
+	vim.api.nvim_set_keymap('v', '<sc-c>', '"+y', {noremap = true})
+	vim.api.nvim_set_keymap('n', '<sc-v>', 'l"+P', {noremap = true})
+	vim.api.nvim_set_keymap('v', '<sc-v>', '"+P', {noremap = true})
+	vim.api.nvim_set_keymap('c', '<sc-v>', '<C-o>l<C-o>"+<C-o>P<C-o>l', {noremap = true})
+	vim.api.nvim_set_keymap('i', '<sc-v>', '<ESC>l"+Pli', {noremap = true})
+	vim.api.nvim_set_keymap('t', '<sc-v>', '<C-\\><C-n>"+Pi', {noremap = true})
+  vim.g.neovide_cursor_vfx_mode = "torpedo"
 end
