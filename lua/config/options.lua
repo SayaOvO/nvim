@@ -1,6 +1,6 @@
 local options = {
-  relativenumber = true,
-  number = true,
+  -- relativenumber = true,
+  -- number = true,
   tabstop = 2, -- 2 spaces for a tab
   shiftwidth = 2, -- 2 spaces for indent width
   expandtab = true, -- use spaces instead tab
@@ -35,7 +35,7 @@ end
 
 
 -- neovide relate
-vim.o.guifont = "MonoLisa Nasy:h10:i"
+vim.o.guifont = "MonoLisa Nasy:h9:i"
 if vim.g.neovide then
 	vim.api.nvim_set_keymap('v', '<sc-c>', '"+y', {noremap = true})
 	vim.api.nvim_set_keymap('n', '<sc-v>', 'l"+P', {noremap = true})

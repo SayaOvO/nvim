@@ -25,4 +25,5 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-vim.cmd.colorscheme "catppuccin-latte"
+-- vim.cmd.colorscheme "catppuccin-latte"
+vim.cmd.colorscheme "rose-pine-dawn"
