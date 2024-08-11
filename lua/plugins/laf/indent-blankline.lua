@@ -14,7 +14,7 @@ local highlight = {
 return {
   "lukas-reineke/indent-blankline.nvim",
   event = "VeryLazy",
-  -- enabled = false,
+  enabled = false,
   opts = {
     indent = {
       char = "▏", -- Thiner, not suitable when enable scope
