@@ -1,5 +1,4 @@
 local map = vim.keymap
-
 map.set("n", "<leader>e", "<cmd>Neotree toggle<cr>", { noremap = true, desc = "open oil" })
 map.set("n", "H", "^", { noremap = true })
 map.set("n", "L", "$", { noremap = true })
