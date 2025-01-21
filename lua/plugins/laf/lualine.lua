@@ -30,19 +30,18 @@ return {
 			},
 			sections = {
 				lualine_a = {},
-				lualine_b = { "branch" },
+				lualine_b = { "branch", "diff" },
 				lualine_c = {
-					"%=",
-					{ "%n ·", padding = { right = 1, left = 0 } },
+          "%=",
+					"location",
 					{
 						"filetype",
 						colored = false,
 						icon_only = true,
-						padding = 0,
 					},
 					{
 						"filename",
-						padding = { left = 0.5, right = 1 },
+            file_status = true,
 					},
 				},
 				lualine_x = {},
