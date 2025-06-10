@@ -33,7 +33,8 @@ end
 
 -- disable diagnostic here
 vim.diagnostic.config({ virtual_text = false })
-vim.g.background = "light"
+vim.g.background = "dark"
+vim.g.clipboard = "wl-copy"
 
 vim.api.nvim_set_hl(0, "FlashLabel", { bg = "#687085" })
 
