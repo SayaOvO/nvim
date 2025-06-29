@@ -4,7 +4,7 @@ return {
     "tpope/vim-repeat",
   },
   config = function()
-    vim.keymap.set({ "n", "x", "o" }, "<C-'>", "<Plug>(leap)", {
+    vim.keymap.set({ "n", "x", "o" }, "<C-c>'", "<Plug>(leap)", {
       noremap = true, -- 推荐保持 noremap
       silent = true, -- 根据你的偏好设置
       desc = "Leap forward (Ctrl+')", -- 可选的描述，用于 which-key 等插件
